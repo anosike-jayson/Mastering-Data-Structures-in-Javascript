@@ -21,3 +21,12 @@ function sortDeck(deck) {
     return deck.sort((a, b) => a - b)
 }
 console.log(sortDeck([34, 67, 99, 23445, 1]));
+
+//mapping 
+let numbers = [1, 3, 4, 5, 7];
+const double = numbers.map(num => num * 2)
+console.log(double)
+for (let num of numbers){
+    console.log(num)
+}
+numbers.forEach(num => console.log(num))
