@@ -51,10 +51,40 @@ function sortDeck(deck) {
   });
 }
 
-// Example usage
-const unsortedDeck = [
-  "10-hearts", "3-diamonds", "A-clubs", "2-spades", 
+console.log(sortDeck([
+  "10-hearts", "3-diamonds", "A-clubs", "2-spades",
   "J-hearts", "7-clubs", "K-spades", "5-diamonds"
-];
+]));
 
-console.log(sortDeck(unsortedDeck));
+// // Example usage
+// const unsortedDeck = [
+//   "10-hearts", "3-diamonds", "A-clubs", "2-spades", 
+//   "J-hearts", "7-clubs", "K-spades", "5-diamonds"
+// ];
+
+// console.log(sortDeck(unsortedDeck));
+
+// function reverseStr(string){
+//   for (i = string.length -1; i < 0; i++){
+//     console.log(i)
+//   }
+//   return string[1];
+// }
+// console.log(reverseStr("hello"))
+
+//fizz buzz 
+function counter(){
+  for (let i=1; i<= 100; i++){
+    if (i % 3 === 0 && i % 5 === 0 ){
+      console.log(i, `fizzbuzz`)
+    } else if (i % 5 === 0){
+      console.log(i, `buzz`)
+    } else if (i % 3 === 0 ){ 
+      console.log(i, `fizz`)
+    } else {
+      console.log(i)
+    }
+  }
+}
+
+console.log(counter());
